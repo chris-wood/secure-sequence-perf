@@ -103,7 +103,7 @@ profileFunction(PRF func, uint32_t saddr, uint32_t daddr, uint16_t sport, uint16
     struct timeval delta;
     gettimeofday(&start, NULL);
 
-    // time it
+    // function to profile
     uint32_t random_seq = func(saddr, daddr, sport, dport);
 
     gettimeofday(&end, NULL); \
